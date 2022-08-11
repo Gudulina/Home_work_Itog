@@ -2,6 +2,8 @@
 формирует массив строк, длина которых меньше либо равна 3 символа. */
 
 string[] arrayFirst = new string[4] {"hello", "2", "world", ":-)"};
+//string[] arrayFirst = new string[4] {"1234", "1567", "-2", "computer science"};
+
 string[] arraySecond = new string[arrayFirst.Length];
 
 void ArrayFormation (string[] arrayFirst, string[] arraySecond)
@@ -17,3 +19,14 @@ void ArrayFormation (string[] arrayFirst, string[] arraySecond)
     }
 }
 
+void PrintArray(string[] array)
+{
+    for (int i = 0; i < array.Length; i++)
+        {
+            System.Console.Write($"{array[i]} ");
+        }
+    Console.WriteLine();
+}
+
+ArrayFormation (arrayFirst, arraySecond);
+PrintArray (arraySecond);
